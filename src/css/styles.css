@@ -81,6 +81,10 @@ body {
   font-size: 16px;
   color: #fefff2;
 }
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
 .wrapper {
   display: flex;
   flex-flow: column nowrap;
@@ -92,9 +96,10 @@ body {
   margin: 0 auto;
 }
 
+/* header styles */
 .header {
   padding: 15px 0px;
-  margin-bottom: 80px;
+  margin-bottom: 180px;
   background-color: #f64203;
 }
 .header__inner {
@@ -123,3 +128,30 @@ body {
 .header__links a:first-child {
   margin-right: 30px;
 }
+/*------------------------------------------------*/
+
+.content {
+}
+
+/* about styles */
+.about {
+  margin-bottom: 180px;
+  text-align: center;
+}
+.about__inner {
+}
+.about__heading {
+}
+.about__headingInfo {
+  padding: 20px 0px;
+  transition: 0.5s;
+  font-size: 18px;
+}
+.about__headingInfo:hover {
+  padding: 40px 0px;
+  margin-top: 10px;
+  border: 4px dotted #f64203;
+  border-radius: 40px 40px 40px 40px;
+}
+
+/*-------------------------------------------------*/
