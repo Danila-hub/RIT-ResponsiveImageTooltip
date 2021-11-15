@@ -74,3 +74,52 @@ h6 {
   font-weight: inherit;
 }
 /*--------------------*/
+
+body {
+  background-color: #01737e;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fefff2;
+}
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+
+  overflow: hidden;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 15px 0px;
+  margin-bottom: 80px;
+  background-color: #f64203;
+}
+.header__inner {
+  padding: 0px 35px;
+}
+.header__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  max-width: 70px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__links a {
+  color: #fefff2;
+  padding: 10px 0px;
+  transition: 0.5s;
+}
+.header__links a:hover {
+  color: #152228;
+}
+.header__links a:first-child {
+  margin-right: 30px;
+}
