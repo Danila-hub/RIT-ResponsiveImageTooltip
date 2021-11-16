@@ -202,3 +202,61 @@ h2 {
   margin-bottom: 50px;
 }
 /*-------------------------------------------------*/
+
+/* Object-fit method */
+.RedImage {
+  border: 5px solid #fefff2;
+}
+.objectMethod {
+  margin-top: 80px;
+  transition: 0.5s;
+}
+.objectMethod:hover {
+  background-color: #f64203;
+  padding: 30px 0px;
+}
+.objectMethod__VertExample {
+  margin-bottom: 40px;
+}
+.objectMethod__VertRow {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.objectMethod__VertColumn {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.objectMethod__VertImage {
+  height: 200px;
+  margin: 3px 3px;
+}
+.objectMethod__VertImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.objectMethod__horizExample {
+}
+.objectMethod__horizItems {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.objectMethod__horizRow {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.objectMethod__horizImage {
+  height: 300px;
+}
+.objectMethod__horizRow p {
+  max-width: 500px;
+}
+.objectMethod__horizImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 10px 10px;
+}
