@@ -84,6 +84,7 @@ body {
 h1 {
   font-size: 40px;
   font-weight: 700;
+  padding: 0px 10px;
 }
 h2 {
   font-size: 30px;
@@ -127,6 +128,7 @@ h2 {
 .header__links a {
   color: #fefff2;
   padding: 10px 0px;
+  padding-left: 20px;
   transition: 0.5s;
 }
 .header__links a:hover {
@@ -148,6 +150,7 @@ h2 {
 .about__inner {
 }
 .about__heading {
+  padding: 0px 10px;
 }
 .about__headingInfo {
   padding: 20px 0px;
@@ -247,6 +250,7 @@ h2 {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  padding: 0px 10px;
 }
 .objectMethod__horizImage {
   height: 300px;
@@ -260,3 +264,53 @@ h2 {
   object-fit: cover;
   padding: 10px 10px;
 }
+
+/*-------------------------------------------------*/
+
+/* Adaptive zone */
+@media screen and (max-width: 768px) {
+  .objectMethod__horizRow {
+    flex-flow: row wrap;
+  }
+
+  .objectMethod__horizRow p {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+  }
+  .header {
+    margin-bottom: 80px;
+  }
+  .about {
+    margin-bottom: 80px;
+  }
+  .header__logo {
+    max-width: 40px;
+  }
+  .header__links {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .header__links a {
+    padding: 10px 0px;
+    padding-left: 25px;
+  }
+  .header__links a:hover {
+    color: #152228;
+  }
+  .header__links a:first-child {
+    margin-right: 0px;
+  }
+  .objectMethod {
+    margin-top: 40px;
+  }
+  .objectMethod__horizItem:nth-child(even) {
+    display: none;
+  }
+}
+
+/*-------------------------------------------------*/
