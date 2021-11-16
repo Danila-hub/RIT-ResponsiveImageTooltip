@@ -90,7 +90,7 @@ h2 {
   font-size: 30px;
   font-weight: 500;
   padding: 30px 0px;
-  margin-bottom: 20px;
+
   padding-left: 10px;
 }
 .wrapper {
@@ -102,6 +102,16 @@ h2 {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+.headingOfExamples {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.headingOfExamples a {
+  margin-right: 20px;
 }
 
 /* header styles */
@@ -137,6 +147,55 @@ h2 {
 .header__links a:first-child {
   margin-right: 30px;
 }
+/*------------------------------------------------*/
+/* Buttons Zone */
+
+.bubbly-button {
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #f64203;
+  color: #fff;
+  border-radius: 4px;
+
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 81, 1, 0.959);
+}
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before,
+.bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #f64203;
+  box-shadow: 0 2px 25px rgb(255, 81, 0);
+}
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
 /*------------------------------------------------*/
 
 .content {
@@ -221,7 +280,7 @@ h2 {
   transition: 0.5s;
 }
 .objectMethod:hover {
-  background-color: #f64203;
+  background-color: #013d45;
   padding: 30px 0px;
 }
 .objectMethod__VertExample {
