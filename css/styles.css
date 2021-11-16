@@ -273,7 +273,29 @@ h2 {
 
 /*-------------------------------------------------*/
 
+/* Picture tag method */
+.pictureMethod {
+  transition: 0.5s;
+}
+
+.pictureMethod:hover {
+  background-color: #152228;
+  padding: 20px 0px;
+}
+
+.pictureMethod__item {
+  display: flex;
+  justify-content: center;
+}
+/*-------------------------------------------------*/
+
 /* Adaptive zone */
+@media screen and (min-width: 1140px) {
+  .pictureMethod__item {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .objectMethod__horizRow {
     flex-flow: row wrap;
