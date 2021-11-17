@@ -1,16 +1,5 @@
-console.log("test");
-document.querySelectorAll("code").forEach(function (element) {
-  element.innerHTML = element.innerHTML
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-});
-
-let leftExample = document.getElementById("htmlExample");
-console.log(leftExample);
-leftExample.textContent = `
+// variables with code text ========================//
+let leftExampleText = `
 <div class="widthMethod__inner">
     <div class="headingOfExamples">
       <h2>Max-width method:</h2>
@@ -40,10 +29,7 @@ leftExample.textContent = `
 </div>
 `;
 
-let rightExample = document.getElementById("cssExample");
-console.log(leftExample);
-
-rightExample.textContent = `
+let rightExampleText = `
 button {
   cursor: pointer;
 }
@@ -76,4 +62,56 @@ h6 {
 /*--------------------*/
 .exampleZone__codeInner {
   max-width: 600px;
-}`;
+}
+`;
+//==================================================//
+
+// replace code elements ===========================//
+
+document.querySelectorAll("code").forEach(function (element) {
+  element.innerHTML = element.innerHTML
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+});
+
+//==================================================//
+
+// add code examples to html code tag ==============//
+
+let leftExample = document.getElementById("htmlExample");
+leftExample.textContent = leftExampleText;
+
+let rightExample = document.getElementById("cssExample");
+rightExample.textContent = rightExampleText;
+
+//==================================================//
+
+// Copy buttons script =============================//
+
+let copyHtmlButton = document.getElementById("copyHtmlButton");
+copyHtmlButton.onclick = function () {
+  navigator.clipboard.writeText(leftExampleText).then(
+    function () {
+      copyHtmlButton.textContent = "Copied!";
+    },
+    function () {
+      //If fail//
+    }
+  );
+};
+
+let copyCssButton = document.getElementById("copyCssButton");
+copyCssButton.onclick = function () {
+  navigator.clipboard.writeText(rightExampleText).then(
+    function () {
+      copyCssButton.textContent = "Copied!";
+    },
+    function () {
+      //If fail//
+    }
+  );
+};
+//==================================================//
