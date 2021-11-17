@@ -14,9 +14,9 @@ leftExample.textContent = `
 <div class="widthMethod__inner">
     <div class="headingOfExamples">
       <h2>Max-width method:</h2>
-      <a href="code_examples/WidthExamples.html" class="bubbly-button"
-        >See an example</a
-      >
+      <a href="code_examples/WidthExamples.html" 
+        class="bubbly-button"> See an example
+      </a>
     </div>
     <div class="widthMethod__column">
       <div class="widthMethod__item">

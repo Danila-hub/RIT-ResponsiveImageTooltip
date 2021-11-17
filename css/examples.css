@@ -74,6 +74,41 @@ h6 {
   font-weight: inherit;
 }
 /*--------------------*/
+
+body {
+  background-color: #01737e;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fefff2;
+}
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+
+  overflow: hidden;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .exampleZone__codeInner {
   max-width: 600px;
+}
+.exampleZone__codeInner code {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.exampleZone__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.exampleZone__leftItem {
+  padding: 0px 5px;
+}
+.exampleZone__rightItem {
+  padding: 0px 5px;
 }
