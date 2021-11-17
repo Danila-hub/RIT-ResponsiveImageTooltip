@@ -1,67 +1,28 @@
 // variables with code text ========================//
 let leftExampleText = `
-<div class="widthMethod__inner">
-    <div class="headingOfExamples">
-      <h2>Max-width method:</h2>
-      <a href="code_examples/WidthExamples.html" 
-        class="bubbly-button"> See an example
-      </a>
-    </div>
-    <div class="widthMethod__column">
-      <div class="widthMethod__item">
-        <img src="img/1300x200.png" alt="" />
-        <img src="img/1300x400.png" alt="" />
-      </div>
-      <div class="widthMethod__item">
-        <div class="widthMethod__row">
-          <div class="widthMethod__image">
-            <img src="img/400x600.png" alt="" />
-          </div>
-          <div class="widthMethod__image">
-            <img src="img/400x600.png" alt="" />
-          </div>
-          <div class="widthMethod__image">
-            <img src="img/400x600.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="preview__row">
+  <div class="preview__img">
+    <img src="../path/YourImage.jpeg" alt="image" />
+  </div>
+  <div class="preview__img">
+    <img src="../path/YourImage.jpeg" alt="image" />
+  </div>
 </div>
 `;
 
 let rightExampleText = `
-button {
-  cursor: pointer;
+.preview__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+.preview__img {
+  max-width: 460px;
 }
-a,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-ul li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-/*--------------------*/
-.exampleZone__codeInner {
-  max-width: 600px;
+.preview__img img {
+  width: 100%;
+  padding: 0px 5px;
 }
 `;
 //==================================================//

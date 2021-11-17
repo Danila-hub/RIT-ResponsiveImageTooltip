@@ -116,7 +116,7 @@ body {
 }
 .exampleZone__codeInner code {
   border-radius: 10px;
-  height: 580px;
+  height: 360px;
 }
 .exampleZone__nav {
   display: flex;
@@ -215,4 +215,27 @@ body {
 }
 /*---------------------------------------*/
 
+/* preview zone */
+.preview {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.preview__inner {
+  background-color: #152228;
+  padding: 50px;
+  border-radius: 20px;
+}
+.preview__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.preview__img {
+  max-width: 460px;
+}
+.preview__img img {
+  width: 100%;
+  padding: 0px 5px;
+}
 /*---------------------------------------*/
