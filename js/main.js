@@ -37,7 +37,8 @@ leftExample.textContent = `
         </div>
       </div>
     </div>
-</div>`;
+</div>
+`;
 
 let rightExample = document.getElementById("cssExample");
 console.log(leftExample);

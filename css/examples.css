@@ -91,24 +91,42 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+.header {
+  background-color: #fefff2;
+  margin-bottom: 20px;
+}
+.header__inner {
+  padding: 15px 0 15px 15px;
+}
+.header__back a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f64203;
+}
 
 .exampleZone__codeInner {
-  max-width: 600px;
+}
+
+.exampleZone__codeInner pre {
 }
 .exampleZone__codeInner code {
   border-radius: 10px;
-  height: 100%;
+  height: 580px;
 }
 
 .exampleZone__row {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: stretch;
+  max-height: 630px;
 }
 .exampleZone__leftItem {
   padding: 0px 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .exampleZone__rightItem {
   padding: 0px 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
