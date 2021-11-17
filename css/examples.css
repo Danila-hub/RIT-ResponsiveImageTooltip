@@ -74,3 +74,6 @@ h6 {
   font-weight: inherit;
 }
 /*--------------------*/
+.exampleZone__codeInner {
+  max-width: 600px;
+}
