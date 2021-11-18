@@ -253,6 +253,39 @@ body {
   width: 100%;
   padding: 0px 5px;
 }
+
+/* preview object-fit */
+
+.preview__objectFitRow {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.preview__objectFitItem {
+  height: 300px;
+  padding: 0 5px;
+}
+.preview__objectFitItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* If you are using a smartphone 
+with a display 
+resolution of up to 556px 
+you see this example:  */
+@media screen and (max-width: 566px) {
+  .preview__objectFitRow {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .preview__objectFitItem {
+    height: 170px;
+    padding: 5px 5px;
+  }
+}
+
+/* ------------------------------------------- */
+
 /*---------------------------------------*/
 
 /* Adaptive media zone */

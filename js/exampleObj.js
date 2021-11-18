@@ -1,26 +1,42 @@
 // variables max-width with code text ========================//
-let leftExampleText = `<div class="preview__row">
-  <div class="preview__img">
-    <img src="../path/YourImage.jpeg" alt="image" />
-  </div>
-  <div class="preview__img">
-    <img src="../path/YourImage.jpeg" alt="image" />
-  </div>
+let leftExampleText = `<div class="preview__objectFitRow">
+    <div class="preview__objectFitItem">
+        <img src="../img/400x600.png" alt="" />
+    </div>
+    <div class="preview__objectFitItem">
+        <img src="../img/600x800.png" alt="" />
+    </div>
+    <div class="preview__objectFitItem">
+        <img src="../img/800x400.png" alt="" />
+    </div>
 </div>
 `;
 
-let rightExampleText = `.preview__row {
+let rightExampleText = `.preview__objectFitRow {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
 }
-.preview__img {
-  max-width: 460px;
+.preview__objectFitItem {
+  height: 300px;
+  padding: 0 5px;
 }
-.preview__img img {
+.preview__objectFitItem img {
   width: 100%;
-  padding: 0px 5px;
+  height: 100%;
+  object-fit: cover;
+}
+/* If you are using a smartphone 
+with a display resolution of up 
+to 556px you see this example:  */
+@media screen and (max-width: 566px) {
+  .preview__objectFitRow {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .preview__objectFitItem {
+    height: 170px;
+    padding: 5px 5px;
+  }
 }
 `;
 
