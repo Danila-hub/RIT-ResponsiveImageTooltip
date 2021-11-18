@@ -286,6 +286,16 @@ you see this example:  */
 
 /* ------------------------------------------- */
 
+/* preview picture tag */
+
+.preview__picTag {
+  max-width: 1140px;
+}
+.preview__picTag * {
+  width: 100%;
+}
+/* ------------------------------------------- */
+
 /*---------------------------------------*/
 
 /* Adaptive media zone */

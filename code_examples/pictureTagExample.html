@@ -16,7 +16,7 @@
       href="../modules/highlight/styles/base16/dracula.min.css"
     />
 
-    <title>RIT: Max-width example</title>
+    <title>RIT: Picture TAG example</title>
   </head>
   <body>
     <div class="wrapper">
@@ -75,14 +75,25 @@
         <section class="preview">
           <div class="container">
             <div class="preview__inner">
-              <div class="preview__row">
-                <div class="preview__img">
-                  <img src="../img/400x600.png" alt="" />
-                </div>
-                <div class="preview__img">
-                  <img src="../img/600x800.png" alt="" />
-                </div>
-              </div>
+              <picture class="preview__picTag">
+                <source
+                  srcset="../img/1300x400.png"
+                  media="(min-width: 1140px)"
+                />
+                <source
+                  srcset="../img/1300x200.png"
+                  media="(min-width: 900px)"
+                />
+                <source
+                  srcset="../img/800x400.png"
+                  media="(min-width: 700px)"
+                />
+                <source
+                  srcset="../img/400x600.png"
+                  media="(min-width: 700px)"
+                />
+                <img src="../img/picTag.png" alt="default image" />
+              </picture>
             </div>
           </div>
         </section>
@@ -91,7 +102,7 @@
 
     <!-- scripts zone -->
 
-    <script src="../js/main.js"></script>
+    <script src="../js/examplePic.js"></script>
 
     <script src="../modules/highlight/highlight.min.js"></script>
 

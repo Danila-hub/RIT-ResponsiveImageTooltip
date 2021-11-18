@@ -1,42 +1,32 @@
 // variables max-width with code text ========================//
-let leftExampleText = `<div class="preview__objectFitRow">
-    <div class="preview__objectFitItem">
-        <img src="../path/YourImage.jpeg" alt="" />
-    </div>
-    <div class="preview__objectFitItem">
-        <img src="../path/YourImage.jpeg" alt="" />
-    </div>
-    <div class="preview__objectFitItem">
-        <img src="../path/YourImage.jpeg" alt="" />
-    </div>
-</div>
+let leftExampleText = `<picture class="preview__picTag">
+  <source
+    srcset="../path/YourImage.jpeg"
+    media="(min-width: 1140px)"
+  />
+  <source
+    srcset="../path/YourImage.jpeg"
+    media="(min-width: 900px)"
+  />
+  <source
+    srcset="../path/YourImage.jpeg"
+    media="(min-width: 700px)"
+  />
+  <source
+    srcset="../path/YourImage.jpeg"
+    media="(min-width: 700px)"
+  />
+  <img src="../path/YourImage.jpeg" alt="default image" />
+</picture>
 `;
 
-let rightExampleText = `.preview__objectFitRow {
-  display: flex;
-  flex-flow: row nowrap;
+let rightExampleText = `/* If you use IE 
+you see the default image  */
+.preview__picTag {
+  max-width: 1140px;
 }
-.preview__objectFitItem {
-  height: 300px;
-  padding: 0 5px;
-}
-.preview__objectFitItem img {
+.preview__picTag * {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* If you are using a smartphone 
-with a display resolution of up 
-to 556px you see this example:  */
-@media screen and (max-width: 566px) {
-  .preview__objectFitRow {
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  .preview__objectFitItem {
-    height: 170px;
-    padding: 5px 5px;
-  }
 }
 `;
 

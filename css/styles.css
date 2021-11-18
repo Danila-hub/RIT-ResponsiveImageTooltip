@@ -353,6 +353,12 @@ h2 {
   display: flex;
   justify-content: center;
 }
+.pictureMethod__itemImages {
+  max-width: 1140px;
+}
+.pictureMethod__itemImages * {
+  width: 100%;
+}
 /*-------------------------------------------------*/
 
 /* Adaptive zone */
