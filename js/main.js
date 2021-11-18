@@ -56,7 +56,11 @@ copyHtmlButton.onclick = function () {
     function () {
       copyHtmlButton.textContent = "Copied!";
       setTimeout(() => {
-        copyHtmlButton.textContent = "Copy";
+        copyHtmlButton.textContent = `Copy`;
+        let iconFont = document.createElement("span");
+        iconFont.setAttribute("class", "icon-copyIcon copyButtonIcon");
+        console.log(iconFont);
+        copyHtmlButton.appendChild(iconFont);
       }, 1000);
     },
     function () {
@@ -71,7 +75,11 @@ copyCssButton.onclick = function () {
     function () {
       copyCssButton.textContent = "Copied!";
       setTimeout(() => {
-        copyCssButton.textContent = "Copy";
+        copyCssButton.textContent = `Copy`;
+        let iconFont = document.createElement("span");
+        iconFont.setAttribute("class", "icon-copyIcon copyButtonIcon");
+        console.log(iconFont);
+        copyCssButton.appendChild(iconFont);
       }, 1000);
     },
     function () {
