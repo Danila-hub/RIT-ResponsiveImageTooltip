@@ -1,6 +1,5 @@
 // variables with code text ========================//
-let leftExampleText = `
-<div class="preview__row">
+let leftExampleText = `<div class="preview__row">
   <div class="preview__img">
     <img src="../path/YourImage.jpeg" alt="image" />
   </div>
@@ -10,8 +9,7 @@ let leftExampleText = `
 </div>
 `;
 
-let rightExampleText = `
-.preview__row {
+let rightExampleText = `.preview__row {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;

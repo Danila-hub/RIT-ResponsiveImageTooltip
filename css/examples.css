@@ -243,3 +243,27 @@ body {
   padding: 0px 5px;
 }
 /*---------------------------------------*/
+
+/* Adaptive media zone */
+@media screen and (max-width: 856px) {
+  .exampleZone__row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-height: none;
+  }
+  .exampleZone__codeInner code {
+    height: 100%;
+  }
+  .preview {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .exampleZone__codeInner code {
+    font-size: 10px;
+    line-height: 1px;
+  }
+}
+/*---------------------------------------*/
