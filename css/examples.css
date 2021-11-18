@@ -205,6 +205,11 @@ body {
 }
 
 /* back button */
+.backButtonIcon {
+  position: relative;
+  top: 1px;
+  left: 0;
+}
 .backButton {
   background-color: #152228;
 }
@@ -212,6 +217,12 @@ body {
   transform: scale(0.9);
   background-color: #152228;
   box-shadow: 0 2px 25px rgb(36, 35, 35);
+}
+/* copy button */
+.copyButtonIcon {
+  position: relative;
+  top: 1px;
+  left: 0;
 }
 /*---------------------------------------*/
 
@@ -245,7 +256,7 @@ body {
 /*---------------------------------------*/
 
 /* Adaptive media zone */
-@media screen and (max-width: 856px) {
+@media screen and (max-width: 848px) {
   .exampleZone__row {
     display: flex;
     flex-flow: row wrap;
