@@ -57,6 +57,9 @@ copyHtmlButton.onclick = function () {
   navigator.clipboard.writeText(leftExampleText).then(
     function () {
       copyHtmlButton.textContent = "Copied!";
+      setTimeout(() => {
+        copyHtmlButton.textContent = "Copy";
+      }, 1000);
     },
     function () {
       //If fail//
@@ -69,6 +72,9 @@ copyCssButton.onclick = function () {
   navigator.clipboard.writeText(rightExampleText).then(
     function () {
       copyCssButton.textContent = "Copied!";
+      setTimeout(() => {
+        copyCssButton.textContent = "Copy";
+      }, 1000);
     },
     function () {
       //If fail//
