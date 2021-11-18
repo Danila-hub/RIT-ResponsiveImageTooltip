@@ -116,7 +116,7 @@ body {
   transition: 0.5s;
 }
 .exampleZone__codeInner code:hover {
-  box-shadow: 0px 0px 24px 11px rgba(34, 60, 80, 0.82);
+  box-shadow: 0px 0px 24px 11px rgba(34, 60, 80, 0.4);
 }
 .exampleZone__nav {
   display: flex;
@@ -227,7 +227,7 @@ body {
   transition: 0.5s;
 }
 .preview__inner:hover {
-  box-shadow: 0px 0px 24px 11px rgba(34, 60, 80, 0.82);
+  box-shadow: 0px 0px 24px 11px rgba(34, 60, 80, 0.4);
 }
 .preview__row {
   display: flex;
