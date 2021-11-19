@@ -256,6 +256,9 @@ body {
 
 /* preview object-fit */
 
+.secondExample {
+}
+
 .preview__objectFitRow {
   display: flex;
   flex-flow: row nowrap;
@@ -269,6 +272,15 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.preview__objectFitItemSecond {
+  height: 300px;
+  padding: 0 5px;
+}
+.preview__objectFitItemSecond img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 /* If you are using a smartphone 
 with a display 
 resolution of up to 556px 
@@ -279,6 +291,10 @@ you see this example:  */
     flex-flow: column nowrap;
   }
   .preview__objectFitItem {
+    height: 170px;
+    padding: 5px 5px;
+  }
+  .preview__objectFitItemSecond {
     height: 170px;
     padding: 5px 5px;
   }
