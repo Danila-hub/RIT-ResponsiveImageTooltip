@@ -361,6 +361,29 @@ h2 {
 }
 /*-------------------------------------------------*/
 
+/* Flex method */
+.flexMethod {
+  margin-top: 50px;
+  transition: 0.5s;
+}
+.flexMethod:hover {
+  background-color: #013d45;
+  padding: 20px 0px;
+}
+.flexMethod__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.flexMethod__item {
+  flex: 0 1 400px;
+  padding: 0px 5px;
+}
+.flexMethod__item img {
+  width: 100%;
+}
+/*-------------------------------------------------*/
+
 /* Adaptive zone */
 @media screen and (min-width: 1140px) {
   .pictureMethod__item {
