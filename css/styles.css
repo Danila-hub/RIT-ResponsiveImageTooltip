@@ -386,6 +386,56 @@ h2 {
 }
 /*-------------------------------------------------*/
 
+/* Background-image method */
+.backgroundMethod {
+  margin-top: 50px;
+  transition: 0.5s;
+}
+.backgroundMethod:hover {
+  background-color: #152228;
+  padding: 20px 0px;
+}
+.backgroundMethod__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.backgroundMethod__item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+.backgroundMethod__text {
+  flex: 1 0 150px;
+  padding-left: 12px;
+}
+.backgroundMethod__item h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.backgroundMethod__item p {
+  font-size: 14px;
+}
+.backgroundMethod__image {
+  width: 96px;
+  height: 96px;
+  background-image: url("/img/iconForBack.png");
+  background-size: cover;
+  border-radius: 50%;
+}
+@media screen and (max-width: 960px) {
+  .backgroundMethod__row {
+    flex-wrap: wrap;
+  }
+  .backgroundMethod__item {
+    padding: 10px 10px;
+  }
+}
+/*-------------------------------------------------*/
+
 /* Adaptive zone */
 @media screen and (min-width: 1140px) {
   .pictureMethod__item {
