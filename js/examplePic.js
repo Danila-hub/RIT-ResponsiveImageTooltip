@@ -33,38 +33,38 @@ you see the default image  */
 //==================================================//
 // replace code elements ===========================//
 
-document.querySelectorAll("code").forEach(function (element) {
+document.querySelectorAll('code').forEach(function (element) {
   element.innerHTML = element.innerHTML
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 });
 
 //==================================================//
 
 // add code examples to html code tag ==============//
 
-let leftExample = document.getElementById("htmlExample");
+let leftExample = document.getElementById('htmlExample');
 leftExample.textContent = leftExampleText;
 
-let rightExample = document.getElementById("cssExample");
+let rightExample = document.getElementById('cssExample');
 rightExample.textContent = rightExampleText;
 
 //==================================================//
 
 // Copy buttons script =============================//
 
-let copyHtmlButton = document.getElementById("copyHtmlButton");
+let copyHtmlButton = document.getElementById('copyHtmlButton');
 copyHtmlButton.onclick = function () {
   navigator.clipboard.writeText(leftExampleText).then(
     function () {
-      copyHtmlButton.textContent = "Copied!";
+      copyHtmlButton.textContent = 'Copied!';
       setTimeout(() => {
         copyHtmlButton.textContent = `Copy`;
-        let iconFont = document.createElement("span");
-        iconFont.setAttribute("class", "icon-copyIcon copyButtonIcon");
+        let iconFont = document.createElement('span');
+        iconFont.setAttribute('class', 'icon-copyIcon copyButtonIcon');
         console.log(iconFont);
         copyHtmlButton.appendChild(iconFont);
       }, 1000);
@@ -75,15 +75,15 @@ copyHtmlButton.onclick = function () {
   );
 };
 
-let copyCssButton = document.getElementById("copyCssButton");
+let copyCssButton = document.getElementById('copyCssButton');
 copyCssButton.onclick = function () {
   navigator.clipboard.writeText(rightExampleText).then(
     function () {
-      copyCssButton.textContent = "Copied!";
+      copyCssButton.textContent = 'Copied!';
       setTimeout(() => {
         copyCssButton.textContent = `Copy`;
-        let iconFont = document.createElement("span");
-        iconFont.setAttribute("class", "icon-copyIcon copyButtonIcon");
+        let iconFont = document.createElement('span');
+        iconFont.setAttribute('class', 'icon-copyIcon copyButtonIcon');
         console.log(iconFont);
         copyCssButton.appendChild(iconFont);
       }, 1000);
