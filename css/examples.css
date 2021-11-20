@@ -96,7 +96,6 @@ body {
 
 .header {
   background-color: #fefff2;
-  margin-bottom: 20px;
 }
 .header__inner {
   padding: 15px 0 15px 15px;
@@ -106,6 +105,50 @@ body {
   font-weight: 600;
   color: #f64203;
 }
+/*---------------------------------------*/
+
+/* navigation */
+
+.navigation {
+  color: #152228;
+  background-color: #fefff2;
+  margin-bottom: 160px;
+}
+.navigation__heading {
+  display: inline-block;
+  color: #fefff2;
+  font-size: 20px;
+  padding: 15px 15px;
+  margin: 10px 0px 10px 15px;
+  font-weight: 500;
+  background-color: #152228;
+  border-radius: 25px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.navigation__item {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 15px;
+}
+
+.navigation__item a {
+  color: #152228;
+  padding: 5px 0px;
+  transition: 0.5s;
+}
+.navigation__item span {
+  display: none;
+}
+.navigation__item a:hover {
+  color: #f64203;
+}
+
 /*---------------------------------------*/
 
 /* examples zone */
@@ -433,6 +476,23 @@ you see this example:  */
     border-radius: 10px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .navigation__list {
+    flex-flow: column nowrap;
+    padding: 10px 0px;
+  }
+  .navigation__item span {
+    display: inline;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+  .navigation__item {
+    font-size: 18px;
+    padding: 20px 25px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .exampleZone__codeInner code {
     font-size: 10px;
