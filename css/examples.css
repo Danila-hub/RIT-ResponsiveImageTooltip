@@ -151,6 +151,35 @@ body {
 
 /*---------------------------------------*/
 
+/* About zone */
+
+.about {
+  margin-bottom: 30px;
+}
+.about__inner {
+  padding: 20px 30px;
+}
+.about__heading {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.about__info {
+  display: inline-block;
+  background-color: #152228;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+.about__info p {
+  margin-bottom: 7px;
+}
+.about__info p:last-child {
+  margin-bottom: 0px;
+}
+
+/*---------------------------------------*/
+
 /* examples zone */
 
 .exampleZone__codeInner code {
