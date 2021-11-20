@@ -422,7 +422,7 @@ h2 {
 .backgroundMethod__image {
   width: 96px;
   height: 96px;
-  background-image: url('/img/iconForBack.png');
+  background-image: url('../img/iconForBack.png');
   background-size: cover;
   border-radius: 50%;
 }
