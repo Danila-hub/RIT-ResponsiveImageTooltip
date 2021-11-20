@@ -381,6 +381,33 @@ you see this example:  */
 }
 /* ------------------------------------------- */
 
+/* preview Aspect Ratio */
+
+.preview__rowAsp {
+  display: flex;
+  flex-flow: row wrap;
+}
+.preview__itemAsp {
+  width: calc(100% / 4);
+  margin: 0px 4px;
+
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: calc(56.25% / 4);
+}
+.preview__itemAsp img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  margin: auto;
+}
+/* ------------------------------------------- */
+
 /*---------------------------------------*/
 
 /* Adaptive media zone */

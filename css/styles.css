@@ -443,7 +443,7 @@ h2 {
 }
 .aspectRatioMethod:hover {
   padding: 10px 0px;
-  background-color: #013d45;
+  background-color: #075b66;
 }
 .aspectRatioMethod__innner {
   padding-bottom: 30px;
@@ -454,7 +454,7 @@ h2 {
 }
 .aspectRatioMethod__item {
   width: calc(100% / 4);
-  margin: 0px 8px;
+  margin: 0px 4px;
 
   height: 0;
   position: relative;
@@ -464,7 +464,6 @@ h2 {
 .aspectRatioMethod__item img {
   width: 100%;
   height: auto;
-
   position: absolute;
   top: -50%;
   left: -50%;
