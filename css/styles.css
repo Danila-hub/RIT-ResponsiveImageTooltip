@@ -355,9 +355,11 @@ h2 {
 }
 .pictureMethod__itemImages {
   max-width: 1140px;
+  padding: 0 7px;
 }
 .pictureMethod__itemImages * {
   width: 100%;
+  border-radius: 15px;
 }
 /*-------------------------------------------------*/
 
