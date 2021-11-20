@@ -112,7 +112,7 @@ body {
 .navigation {
   color: #152228;
   background-color: #fefff2;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 .navigation__heading {
   display: inline-block;
@@ -173,9 +173,13 @@ body {
 }
 .about__info p {
   margin-bottom: 7px;
+  line-height: 20px;
 }
 .about__info p:last-child {
   margin-bottom: 0px;
+}
+.about__info a {
+  color: #f64203;
 }
 
 /*---------------------------------------*/
