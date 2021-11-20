@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/faviconRit.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/RITiConsFont.css" />
+    <link rel="stylesheet" href="../css/examples.css" />
+    <link
+      rel="stylesheet"
+      href="../modules/highlight/styles/base16/dracula.min.css"
+    />
+
+    <title>RIT: Flex example</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__back">
+              <a href="../index.html" class="bubbly-button backButton">
+                <span class="icon-arrow-left backButtonIcon"></span> Back</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="exampleZone">
+          <div class="container">
+            <div class="exampleZone__row">
+              <div class="exampleZone__leftItem">
+                <div class="exampleZone__nav">
+                  <h2 title="HyperText Markup Language">HTML</h2>
+                  <div class="exampleZone__copyButton">
+                    <button class="bubbly-button" id="copyHtmlButton">
+                      Copy<span class="icon-copyIcon copyButtonIcon"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="exampleZone__codeInner">
+                  <pre>
+                    <code class="hljs language-html" id="htmlExample">
+                      
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <div class="exampleZone__rightItem">
+                <div class="exampleZone__nav">
+                  <h2 title="Cascading Style Sheets">CSS</h2>
+                  <div class="exampleZone__copyButton">
+                    <button class="bubbly-button" id="copyCssButton">
+                      Copy<span class="icon-copyIcon copyButtonIcon"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="exampleZone__codeInner">
+                  <pre>
+                    <code class="hljs language-css" id="cssExample">
+                      
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="preview">
+          <div class="container">
+            <div class="preview__inner">
+              <div class="preview__rowFlex">
+                <div class="preview__itemFlex">
+                  <img src="../img/400x600.png" alt="" />
+                </div>
+                <div class="preview__itemFlex">
+                  <img src="../img/600x800.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- scripts zone -->
+
+    <script src="../js/exampleFlex.js"></script>
+
+    <script src="../modules/highlight/highlight.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+
+    <!-- ---------------------------- -->
+  </body>
+</html>
