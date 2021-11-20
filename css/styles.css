@@ -436,6 +436,44 @@ h2 {
 }
 /*-------------------------------------------------*/
 
+/* Flex method */
+.aspectRatioMethod {
+  margin: 50px 0px 50px 0px;
+  transition: 0.5s;
+}
+.aspectRatioMethod:hover {
+  padding: 10px 0px;
+  background-color: #013d45;
+}
+.aspectRatioMethod__innner {
+  padding-bottom: 30px;
+}
+.aspectRatioMethod__row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.aspectRatioMethod__item {
+  width: calc(100% / 4);
+  margin: 0px 8px;
+
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: calc(56.25% / 4);
+}
+.aspectRatioMethod__item img {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  margin: auto;
+}
+/*-------------------------------------------------*/
+
 /* Adaptive zone */
 @media screen and (min-width: 1140px) {
   .pictureMethod__item {
